@@ -8,13 +8,12 @@ if Controllers then
         -- Store original function
         local originalCooldown = AbilityController.AbilityCooldown
 
-        -- Override cooldown function to reduce cooldown to 1% of its original time
+        -- Override cooldown function to set cooldown to 0
         AbilityController.AbilityCooldown = function(self, abilityName, time, ...)
-            local newCooldown = time and math.max(time * 0.01, 0.05) or 0.05 -- Reduce cooldown to 1% of original, min 0.05s
-            return originalCooldown(self, abilityName, newCooldown, ...)
+            return originalCooldown(self, abilityName, 0, ...) -- Force cooldown to 0
         end
 
-        print("[INFO] Ability cooldown successfully reduced to 1%!")
+        print("[SUCCESS] Ability cooldown set to 0 (instant spam)!")
     else
         print("[WARNING] AbilityController or AbilityCooldown not found!")
     end
