@@ -23,7 +23,7 @@ end
 -- Title Label
 local CreatorLabel = Instance.new("TextLabel")
 CreatorLabel.Size = UDim2.new(1, 0, 0.1, 0)
-CreatorLabel.Text = "Made by Bexruz"
+CreatorLabel.Text = "Made by Bexruz :)"
 CreatorLabel.TextScaled = true
 CreatorLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 CreatorLabel.BackgroundTransparency = 1
@@ -70,7 +70,7 @@ end
 local OpenButton = Instance.new("TextButton")
 OpenButton.Size = UDim2.new(0.1, 0, 0.1, 0)
 OpenButton.Position = UDim2.new(0.02, 0, 0.02, 0)
-OpenButton.Text = "☰"
+OpenButton.Text = "☠️"
 OpenButton.Font = Enum.Font.GothamBold
 OpenButton.TextScaled = true
 OpenButton.TextColor3 = Color3.fromRGB(255, 255, 255)
