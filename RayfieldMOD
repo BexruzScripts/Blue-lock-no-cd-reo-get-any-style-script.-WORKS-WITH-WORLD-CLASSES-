@@ -1628,47 +1628,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 	end)
 
 
-	Main.Position = UDim2.new(0, 10, 0.1, 0) -- Set initial position to left side
-
-		-- Add Square Frame
-		local squareFrame = Instance.new("Frame")
-		 squareFrame.Name = "CustomSquareFrame"
-		 squareFrame.Size = UDim2.new(0, 30, 0, 30) -- Adjust size as needed (30x30 pixels)
-		 squareFrame.Position = UDim2.new(0, 50, 0.5, 0) -- Position after Icon/Title (adjust X offset if Icon is present), vertically centered
-		 squareFrame.AnchorPoint = Vector2.new(0, 0.5)
-		 squareFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50) -- Dark grey color
-		 squareFrame.BorderSizePixel = 1
-		 squareFrame.BorderColor3 = Color3.fromRGB(80, 80, 80)
-		 squareFrame.Parent = Topbar
-
-		 -- Add Custom Image Button inside the Square
-		 local customImageButton = Instance.new("ImageButton")
-		 customImageButton.Name = "CustomImageButton"
-		 customImageButton.Size = UDim2.new(1, -4, 1, -4) -- Slightly smaller than the square (26x26)
-		 customImageButton.Position = UDim2.new(0.5, 0, 0.5, 0) -- Centered in the square
-		 customImageButton.AnchorPoint = Vector2.new(0.5, 0.5)
-		 customImageButton.Image = "rbxassetid://80218976755504"
-		 customImageButton.BackgroundTransparency = 1
-		 customImageButton.Parent = squareFrame
-
-		 -- Add Animation
-		 local originalSize = customImageButton.Size
-		 local tweenInfoDown = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
-		 local tweenInfoUp = TweenInfo.new(0.15, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
-
-		 customImageButton.MouseButton1Down:Connect(function()
-			 TweenService:Create(customImageButton, tweenInfoDown, {Size = UDim2.new(originalSize.X.Scale, originalSize.X.Offset * 0.9, originalSize.Y.Scale, originalSize.Y.Offset * 0.9)}):Play()
-		 end)
-
-		 customImageButton.MouseButton1Up:Connect(function()
-			 TweenService:Create(customImageButton, tweenInfoUp, {Size = originalSize}):Play()
-			 -- Optional: Add callback function here if needed when button is clicked
-			 -- print("Custom Image Button Clicked!")
-		 end)
-
-		 -- End Add Square/Image/Animation
-
-		makeDraggable(Main, Topbar, false, {dragOffset, dragOffsetMobile})
+	makeDraggable(Main, Topbar, false, {dragOffset, dragOffsetMobile})
 	if dragBar then dragBar.Position = useMobileSizing and UDim2.new(0.5, 0, 0.5, dragOffsetMobile) or UDim2.new(0.5, 0, 0.5, dragOffset) makeDraggable(Main, dragInteract, true, {dragOffset, dragOffsetMobile}) end
 
 	for _, TabButton in ipairs(TabList:GetChildren()) do
