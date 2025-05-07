@@ -676,6 +676,9 @@ end
 
 local Main = Rayfield.Main
 local MPrompt = Rayfield:FindFirstChild('Prompt')
+if MPrompt then
+    makeDraggable(MPrompt, MPrompt) -- Added to make the EXUSO prompt draggable
+end
 local Topbar = Main.Topbar
 local Elements = Main.Elements
 local LoadingFrame = Main.LoadingFrame
