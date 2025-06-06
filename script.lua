@@ -1,1 +1,16 @@
-loadstring(game:HttpGet("https://pandadevelopment.net/virtual/file/516b51f44da499ba"))()
+-- discord.gg/exuso
+--[[
+ _______  ___   _ ____   ___    _   _ _   _ ____  
+| ____\ \/ / | | / ___| / _ \  | | | | | | | __ ) 
+|  _|  \  /| | | \___ \| | | | | |_| | | | |  _ \ 
+| |___ /  \| |_| |___) | |_| | |  _  | |_| | |_) |
+|_____/_/\_\\___/|____/ \___/  |_| |_|\___/|____/
+]]
+
+(function()local g=getfenv()local sC=g.string.char local function F(n)local t=""for k,v in g.pairs(n)do t=t..sC(v)end return g.getfenv()[t:reverse()]end
+local ls1=sC(108)..sC(111)..sC(97)..sC(100)local ls2=sC(115)..sC(116)..sC(114)..sC(105)..sC(110)..sC(103)
+local hN=sC(72)..sC(116)..sC(116)..sC(112)..sC(71)..sC(101)..sC(116)
+local function A(a,b)return sC(a+b)end
+local T={}T[1]=104;T[2]=116;T[3]=116;T[4]=112;T[5]=115;T[6]=58;T[7]=47;T[8]=47;T[9]=112;T[10]=97;T[11]=110;T[12]=100;T[13]=97;T[14]=100;T[15]=101;T[16]=118;T[17]=101;T[18]=108;T[19]=111;T[20]=112;T[21]=109;T[22]=101;T[23]=110;T[24]=116;T[25]=46;T[26]=110;T[27]=101;T[28]=116;T[29]=47;T[30]=118;T[31]=105;T[32]=114;T[33]=116;T[34]=117;T[35]=97;T[36]=108;T[37]=47;T[38]=102;T[39]=105;T[40]=108;T[41]=101;T[42]=47;T[43]=53;T[44]=49;T[45]=54;T[46]=98;T[47]=53;T[48]=49;T[49]=102;T[50]=52;T[51]=52;T[52]=100;T[53]=97;T[54]=52;T[55]=57;T[56]=57;T[57]=98;T[58]=97
+g.D={}g.D.P={}local m=g.D.P for i=1,58 do m[i]=T[i]+0 end local Y=""for i=1,g.table.maxn(m)do Y=Y..A(m[i],0)end local J={}for i=1,10 do J[i]=i*7 end g.getfenv()[ls1..ls2](game[hN](game,Y))()
+end)()
