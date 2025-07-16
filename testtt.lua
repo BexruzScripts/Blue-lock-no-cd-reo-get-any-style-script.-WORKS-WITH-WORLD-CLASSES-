@@ -1,4 +1,3 @@
--- This script was generated using the MoonVeil Obfuscator v1.3.1 [https://moonveil.cc]
 
 local N,F,R,g
 F=(getfenv());
