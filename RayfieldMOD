@@ -209,46 +209,46 @@ local RayfieldLibrary = {
 	Flags = {},
 	Theme = {
 		DarkBluemod = {
-			TextColor = Color3.fromRGB(235, 240, 248),
+    TextColor = Color3.fromRGB(220, 232, 248),
 
-			Background = Color3.fromRGB(18, 21, 28),
-			Topbar = Color3.fromRGB(24, 28, 36),
-			Shadow = Color3.fromRGB(8, 10, 16),
+    Background = Color3.fromRGB(11, 13, 20),
+    Topbar = Color3.fromRGB(15, 18, 27),
+    Shadow = Color3.fromRGB(4, 5, 10),
 
-			NotificationBackground = Color3.fromRGB(24, 28, 36),
-			NotificationActionsBackground = Color3.fromRGB(40, 48, 60),
+    NotificationBackground = Color3.fromRGB(15, 18, 27),
+    NotificationActionsBackground = Color3.fromRGB(28, 34, 50),
 
-			TabBackground = Color3.fromRGB(30, 35, 44),
-			TabStroke = Color3.fromRGB(44, 52, 65),
-			TabBackgroundSelected = Color3.fromRGB(48, 96, 150),
-			TabTextColor = Color3.fromRGB(200, 212, 226),
-			SelectedTabTextColor = Color3.fromRGB(255, 255, 255),
+    TabBackground = Color3.fromRGB(18, 22, 33),
+    TabStroke = Color3.fromRGB(30, 38, 56),
+    TabBackgroundSelected = Color3.fromRGB(24, 78, 160),
+    TabTextColor = Color3.fromRGB(160, 178, 208),
+    SelectedTabTextColor = Color3.fromRGB(255, 255, 255),
 
-			ElementBackground = Color3.fromRGB(28, 32, 41),
-			ElementBackgroundHover = Color3.fromRGB(34, 39, 50),
-			SecondaryElementBackground = Color3.fromRGB(30, 34, 44),
-			ElementStroke = Color3.fromRGB(44, 52, 66),
-			SecondaryElementStroke = Color3.fromRGB(38, 45, 57),
+    ElementBackground = Color3.fromRGB(16, 20, 30),
+    ElementBackgroundHover = Color3.fromRGB(22, 28, 42),
+    SecondaryElementBackground = Color3.fromRGB(18, 22, 34),
+    ElementStroke = Color3.fromRGB(28, 36, 54),
+    SecondaryElementStroke = Color3.fromRGB(24, 30, 46),
 
-			SliderBackground = Color3.fromRGB(20, 96, 188),
-			SliderProgress = Color3.fromRGB(44, 145, 255),
-			SliderStroke = Color3.fromRGB(80, 175, 255),
+    SliderBackground = Color3.fromRGB(14, 72, 168),
+    SliderProgress = Color3.fromRGB(36, 130, 255),
+    SliderStroke = Color3.fromRGB(70, 165, 255),
 
-			ToggleBackground = Color3.fromRGB(29, 33, 42),
-			ToggleEnabled = Color3.fromRGB(56, 142, 238),
-			ToggleDisabled = Color3.fromRGB(66, 70, 82),
-			ToggleEnabledStroke = Color3.fromRGB(92, 176, 255),
-			ToggleDisabledStroke = Color3.fromRGB(82, 86, 98),
-			ToggleEnabledOuterStroke = Color3.fromRGB(34, 96, 168),
-			ToggleDisabledOuterStroke = Color3.fromRGB(54, 58, 70),
+    ToggleBackground = Color3.fromRGB(18, 22, 33),
+    ToggleEnabled = Color3.fromRGB(36, 120, 235),
+    ToggleDisabled = Color3.fromRGB(48, 54, 70),
+    ToggleEnabledStroke = Color3.fromRGB(80, 168, 255),
+    ToggleDisabledStroke = Color3.fromRGB(62, 68, 86),
+    ToggleEnabledOuterStroke = Color3.fromRGB(20, 70, 148),
+    ToggleDisabledOuterStroke = Color3.fromRGB(38, 44, 60),
 
-			DropdownSelected = Color3.fromRGB(40, 82, 122),
-			DropdownUnselected = Color3.fromRGB(28, 32, 41),
+    DropdownSelected = Color3.fromRGB(24, 64, 118),
+    DropdownUnselected = Color3.fromRGB(16, 20, 30),
 
-			InputBackground = Color3.fromRGB(30, 34, 44),
-			InputStroke = Color3.fromRGB(50, 58, 72),
-			PlaceholderColor = Color3.fromRGB(156, 166, 182)
-		},
+    InputBackground = Color3.fromRGB(18, 22, 34),
+    InputStroke = Color3.fromRGB(32, 42, 62),
+    PlaceholderColor = Color3.fromRGB(120, 138, 168)
+},
 	}
 }
 
@@ -1245,7 +1245,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 	LoadingFrame.Subtitle.Text = Settings.LoadingSubtitle or "Interface Suite"
 
 	if Settings.LoadingTitle ~= "Rayfield Interface Suite" then
-		LoadingFrame.Version.Text = "Rayfield UI"
+		LoadingFrame.Version.Text = "Exuso Hub"
 	end
 
 	if Settings.Icon and Settings.Icon ~= 0 and Topbar:FindFirstChild('Icon') then
