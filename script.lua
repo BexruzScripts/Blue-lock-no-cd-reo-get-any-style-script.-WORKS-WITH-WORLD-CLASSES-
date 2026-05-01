@@ -6,6 +6,12 @@
 | |___ >  <| |_| \__ \ (_) | |  _  | |_| | |_) |
 |_____/_/\_\\__,_|___/\___/  |_| |_|\__,_|_.__/ 
 ]]
+game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Exuso Hub",
+        Text = "helo sorry script might be downn :(
+BUT it should be back in a few hours so dw!!",
+        Duration = 12
+    })
 if identifyexecutor() == "Potassium" then game:GetService("StarterGui"):SetCore("SendNotification", {
         Title = "Exuso Hub",
         Text = "your executor might be detected, don’t use potassium in blr!!",
